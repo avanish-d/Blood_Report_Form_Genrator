@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media print {
+            button {
+                display: none;
+            }
+        }
+        table {
+    width: 100%;
+}
+
+.heading{
+    color: red;
+}
+
+.mid-head{
+    color: rgb(77, 176, 215);
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* th {
+    background-color: #fff;
+} */
+
+.main-2 input {
+    /* border: none; */
+    /* outline: none; */
+    background-color: transparent;
+    text-align: center;
+    width: 35%;
+}
+
+.l input{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.r input{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    background: rgb(74, 115, 40);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #245c27;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.l-side{
+    margin-left: -83px;
+}
+
+.r-side{
+    margin-top: 20px;
+    margin-right: -40px;
+}
+
+.box-1{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.l{
+    width: 65%;
+    padding: 4px;
+}
+
+.r{
+    width: 35%;
+    padding: 4px;
+}
+
+#i1{
+    margin-left: 15px;
+}
+
+#i3{
+    margin-left: 13px;
+}
+
+#i5{
+    margin-left: 5px;
+}
+
+#h5{
+    margin-top: -2px;
+}
+
+.box-2{
+    display: flex;
+}
+
+.box-2a{
+    border: 0.2vw solid #000;
+    width: 24.5vw;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    padding-top: 0;
+    margin-bottom: 5px;
+    margin-top: -4px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- <% String wbc = request.getParameter("wbc"); %>
+    <% String lymP = request.getParameter("lymP"); %>
+    <% String monP = request.getParameter("monP"); %>
+    <% String eosP = request.getParameter("eosP"); %>
+    <% String basP = request.getParameter("basP"); %>
+    <% String neuH = request.getParameter("neuH"); %>
+    <% String lymH = request.getParameter("lymH"); %>
+    <% String monH = request.getParameter("monH"); %>
+    <% String eosH = request.getParameter("eosH"); %>
+    <% String basH = request.getParameter("basH"); %>
+    <% String s_alyH = request.getParameter("s_alyH"); %>
+    <% String neuP = request.getParameter("neuP"); %>
+    <% String s_alyP = request.getParameter("s_alyP"); %>
+    <% String s_licH = request.getParameter("s_licH"); %>
+    <% String s_licP = request.getParameter("s_licP"); %>
+    <% String p_name = request.getParameter("p_name"); %>
+    <% String gender = request.getParameter("gender"); %>
+    <% String age = request.getParameter("age"); %>
+    <% String test = request.getParameter("test"); %>
+    <% String s_id = request.getParameter("sample_id"); %>
+    <% String d_name = request.getParameter("d_name"); %> -->
+    <div class="main">
+        <div class="l-side">
+            <h5>CMO Regd. No. 5413/10563</h5>
+        </div>
+        <div class="r-side">
+            Mob:- 8934821664
+        </div>
+    </div>
+    <center><h2 class="heading">संत अभिलाष चैरिटेबल चिकित्सा संस्थान एवं पैथोलॉजी लैब</h2></center>
+    <center><h3 class="mid-head">संत कबीर मार्ग, प्रीतम नगर, प्रयागराज, 211011</h3></center>
+    <center><h4 class="mid-head">(कबीर पारख संस्थान, प्रयागराज द्वारा संचालित)</h4></center>
+    <center><h3 class="heading"><u>DEPARTMENT OF PATHOLOGY</u></h3></center>
+    <div class="box-1">
+        <div class="l">
+            <label for="Name">NAME:-</label>
+            <input type="text"><br>
+            <label for="as">Age/Sex:-</label>
+            <input type="text"><br>
+            <label for="u-no">UID No.</label>
+            <input type="text"><br>
+            <label for="d_name">Ref by-</label>
+            <input type="text">
+            <!-- <input type="text" name="u-no" id="i3"> -->
+        </div>
+        <div class="r">
+            <label for="l-id">Lab. Id:-</label>
+            <input type="text" name="l-id" id="i4"><br>
+            <label for="d" >Adv. By</label>
+            <input type="text" name="d" id="i5">
+            <div id="m-side">
+                31/01/2024
+            </div>
+        </div>
+    </div>
+    <center><h3 id="h5"><u>BLOOD TEST REPORT</u></h3></center>
+    <label><u>Urine Test</u></label>
+    <!-- <table border="2">
+        <tr>
+            <th id="a3"><b><u>PARAMETER</u></b></c>
+            </th>
+            <th id="a3"><b><u>RESULT</u></b></th>
+            <th id="a3"><b><u>REF.RANGE</u></b></th>
+            <th id="a3"><b><u>UNIT</u></b></th>
+        </tr>
+        <tr>
+            <th>HGB(Hemoglobin)</th>
+            <td><input type="text" name ="n1"></td>
+            <td name="n2">Gm./dl</td>
+            <td name="n3"><pre>Men 15±2 gm/DL
+Women 12.0±15.0 gm/dL
+            </pre></td>
+        </tr>
+        <tr>
+            <th>TLC(Total Leucocyte Count)</th>
+            <td><input type="text" name="n4"> </td>
+            <td name="n5">x10<sup>3</sup>/cu.mm</td>
+            <td name="n6">%</td>
+        </tr>
+        <tr>
+            <th>DLC(Differential Leucocyte Count)</th>
+            <td><input type="text" name ="n7"> </td>
+            <td name="n8">-------</td>
+            <td name="n9">--------------</td>
+        </tr>
+        <tr>
+            <th>Polymorphs</th>
+            <td><input type="text" name="n10"> </td>
+            <td name="n11">%</td>
+            <td name="n12">40-80%</td>
+        </tr>
+        <tr>
+            <th>Lymphocytes</th>
+            <td><input type="text" name="n13"> </td>
+            <td name="n14">%</td>
+            <td name="n15">20-40%</td>
+        </tr>
+        <tr>
+            <th>Eosinophil's</th>
+            <td><input type="text" name="n16"> </td>
+            <td name="n17">%</td>
+            <td name="n18">1-6%</td>
+        </tr>
+        <tr>
+            <th>Monocytes</th>
+            <td><input type="text" name="n19"> </td>
+            <td name="n20">%</td>
+            <td name="n21">2-10%</td>
+        </tr>
+        <tr>
+            <th>RBC(Red Blood Cell Count)</th>
+            <td><input type="text" name="n22"> </td>
+            <td name="n23">x10<sup>6</sup>/CU.mm</td>
+            <td name="n24"><pre>Men 5.0±0.5x10<sup>6</sup>/cu.mm
+Women 4.3±0.5x10<sup>6</sup>/cu.mm</pre></td>
+        </tr>
+        <tr>
+            <th>ESR(Erythrocyte Sedimentation Rate)</th>
+            <td><input type="text" name="n25"> </td>
+            <td name="n26">mm</td>
+            <td name="n27"><pre>Men 0.7, 1 hrs.
+Women 0.14, 1hrs
+            </pre></td>
+        </tr>
+        <tr>
+            <th>PLT(Platelet Count)</th>
+            <td><input type="text" name="n28"> </td>
+            <td name="n29">x10<sup>3</sup>/μ</td>
+            <td name="n30">Men & Women 280±1.30x10<sup>3</sup>/μ</td>
+        </tr>
+        <tr>
+            <th>HCT/PCV(Hematocrit)</th>
+            <td><input type="text" name="n31"> </td>
+            <td name="n32">%</td>
+            <td name="n33">Men 38.8-46.4%</td>
+        </tr>
+        <tr>
+            <th>MCV(Mean Cell Volume)</th>
+            <td><input type="text" name="n34"> </td>
+            <td name="n35">FL</td>
+            <td name="n36">Men & Women 92±9fl</td>
+        </tr>
+        <var>
+            <tr>
+                <th>MCH(Mean Cell Hemaglobin)</th>
+                <td><input type="text" name="n37"> </td>
+                <td name="n38">pg.</td>
+                <td name="n39">Men & Women 29.5 Pg</td>
+            </tr>
+            <tr>
+                <th>MCHC(Mean Cell Hemaglobin Conc.)</th>
+                <td><input type="text" name="n40"> </td>
+                <td name="n41">G./dl</td>
+                <td name="n42">Men & Women 33±1.5gm/dL</td>
+            </tr>
+            <tr>
+                <th>RDW/CV%(Red Cell Distribution Width)</th>
+                <td><input type="text" name="n43"> </td>
+                <td name="n44">%</td>
+                <td name="n45">Men & Women 12.8±1.2%</td>
+            </tr>
+        </var>
+    </table> -->
+    <center><h3>Urine Report</h3></center>
+    <table class="main-2">
+        <tr>
+            <th><u><b>INVESTIGATION</b></u></th>
+            <th><u><b>RESULT</b></u></th>
+        </tr>
+        <tr><td><strong>PHYSICAL EXAMINATION</strong></td></tr>
+        <tr>
+            <td>Colour</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>pH</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Turbidity</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Deposit</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr><td><strong>CHEMICAL EXAMINATION</strong></td></tr>
+        <tr>
+            <td>Albumin</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Sugar</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr><td><strong>MICROSCOPIC EXAMINATION</strong></td></tr>
+        <tr>
+            <td>RBC's</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Pus Cells</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Epithilial Cells</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Casts</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Crystals</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Bacteria</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <center><button onclick="printPage()">Print</button></center>
+    <script>
+        document.getElementsByName("n1").innerHTML = "<%= wbc %>";
+        document.getElementsByName("n4").innerHTML = "<%= neuP %>";
+        document.getElementsByName("n7").innerHTML = "<%= lymP %>";
+        document.getElementsByName("n10").innerHTML = "<%= monP %>";
+        document.getElementsByName("n13").innerHTML = "<%= eosP %>";
+        document.getElementsByName("n16").innerHTML = "<%= basP %>";
+        document.getElementsByName("n19").innerHTML = "<%= neuH %>";
+        document.getElementsByName("n22").innerHTML = "<%= lymH %>";
+        document.getElementsByName("n25").innerHTML = "<%= monH %>";
+        document.getElementsByName("n28").innerHTML = "<%= eosH %>";
+        document.getElementsByName("n31").innerHTML = "<%= basH %>";
+        document.getElementsByName("n34").innerHTML = "<%= s_alyH %>";
+        document.getElementsByName("n37").innerHTML = "<%= s_alyP %>";
+        document.getElementsByName("n40").innerHTML = "<%= s_licH %>";
+        document.getElementsByName("n43").innerHTML = "<%= s_licP %>";
+
+        var date=new Date();  
+        var day=date.getDate();  
+        var month=date.getMonth()+1;  
+        var year=date.getFullYear();  
+        document.getElementById('m-side').innerHTML=("<br>Date: "+day+"/"+month+"/"+year);
+
+        function printPage() {
+            window.print();
+        }
+
+    </script>
+</body>
+</html>

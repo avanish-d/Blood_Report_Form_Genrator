@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>login</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color:#f8d915;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  /* scroll-behavior: auto; */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#lg img,
+#rg img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#Tests{
+  margin-bottom: 3vh;
+  margin-top: 40vh;
+}
+
+#Gallery{
+  margin-top: 22vh;
+  margin-bottom: 15vh;
+}
+
+
+#lg img,
+#rg img {
+  transition: transform 0.3s ease-in-out;
+}
+
+
+#lg img:hover
+ {
+  transform: scale(1.1);
+}
+
+
+#lg{
+    margin:80px 50px;
+
+}
+
+#rg{
+    margin-right: 0px;
+    margin:80px 50px;
+
+    
+    
+
+}
+
+/* marquee {
+    width: 100%;
+    height: 40px;
+    direction: right;
+    background-color: darkblue;
+    color: antiquewhite; 
+  }*/
+
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  right: 0;
+  align-items: center;
+  height: 148px;
+  background-color:#ea980c;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease; /* Added transition to color */
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+  font-size: 1.1rem;
+}
+
+.left h3 {
+  font-size: 23px;
+  
+  margin-left: 70px;
+}
+
+.left h4 {
+  font-size: 20px;
+  margin-left: 181px;
+}
+
+.left h6 {
+  
+  margin-left: 313px;
+}
+
+
+
+
+
+
+.second-nav {
+  background-color: #3b3a3a;
+  /* color: white; */
+  text-shadow: 0 0 5px #dde110, 0 0 5px #dddde5;
+  padding: 10px;
+  text-align: center;
+  position:fixed;
+  z-index: 2;
+  top: 128px;
+  border-radius: 28px;
+  margin-left: 361px;
+  
+}
+
+.second-nav ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.second-nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.second-nav ul li a {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  font-size: 16px;
+  transition: color 0.3s ease; /* Transition for color change on hover */
+}
+
+.second-nav ul li a:hover {
+  /* color: #ea980c; */
+  background-color:#dc9821;
+  
+}
+
+/* Keyframes for animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.second-nav {
+  animation: fadeInUp 0.5s ease;
+}
+
+
+
+
+
+
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 80px;
+  /* margin-left: 15px; */
+  height: 650px;
+  align-items: center;
+  /* background-color: rgb(18, 18, 62); */
+}
+
+.l-side {
+  width: 70%;
+  margin-left: 50px;
+}
+
+.l-p {
+  margin-top: 30px;
+}
+
+.l-p h1 {
+  margin-bottom: 10px;
+}
+
+.r-side {
+  width: 22%;
+  /* align-items: center;
+    justify-content: center; */
+  /* margin-left: 100px; */
+  height: 548px;
+  /* border: 2px solid white; */
+}
+
+/* Animation for form */
+
+
+
+.r-side form {
+  margin-left: 70px;
+  margin-top: 88px;
+  font-size: 30px;
+}
+
+.r-side form label{
+    margin-top: 15px;
+    font-family: 'Algerian';
+    transition: color 0.3s ease; /* Added transition to color */
+}
+
+.generate-report-btn {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10vh;
+        margin-left: 4vw;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .generate-report-btn:hover {
+        background-color: #45a049;
+      }
+
+.r-side form label,input{
+    height: 30px;
+    width: 220px;
+    margin-bottom: 15px;
+    margin-left: -49px;
+}
+
+#f-button:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transitions to background-color and color */
+}
+
+hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 25px 50px;
+}
+
+#AboutUs{
+  margin-top: 137px;
+}
+
+.test {
+  margin-left: 50px;
+  height: 100px;
+  margin-top: 42vh;
+}
+
+h1 {
+  font-family: 'Algerian';
+}
+
+.test ul {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  margin-top: 15px;
+}
+
+.test ul li{
+  list-style-type: none;
+}
+
+.test ul li:hover {
+  font-size: large;
+  cursor: pointer;
+  transition: font-size 0.3s ease; /* Added transition to font-size */
+}
+
+.about {
+  margin-left: 50px;
+  height: 250px;
+  margin-top: 160px;
+}
+
+.about p {
+  margin-top: 10px;
+  width: 90%;
+}
+
+/* .gallery {
+  margin-left: 50px;
+}
+
+.gallery ul {
+  display: flex;
+  width: 90%;
+  height: 400px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.gallery ul li {
+  margin-top: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery ul li:hover {
+    transform: scale(1.1);
+} */
+
+/* card animation */
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p{
+  text-align: justify;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+/* .r-side form label {
+    margin-top: 15px;
+    font-family: 'Algerian';
+    transition: color 0.3s ease;
+}
+
+.r-side form input {
+    height: 30px;
+    width: 220px;
+    margin-bottom: 15px;
+} */
+
+.img{
+        /* width: 10vw; */
+        height: 60vh;
+        margin-top: 20vh;
+      }
+.about img{
+  height: 72vh;
+  width: 90vw;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+.slide{
+  display: none;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('img/i1.jpg');
+}
+.card[for="c2"] {
+    background-image: url('img/i2.jpg');
+}
+.card[for="c3"] {
+    background-image: url('img/i3.jpg');
+}
+.card[for="c4"] {
+    background-image: url('img/i4.jpg');
+}
+.card[for="c5"] {
+    background-image: url('img/i5.jpg');
+}
+.card[for="c6"] {
+    background-image: url('img/i6.jpg');
+}
+.card[for="c7"] {
+    background-image: url('img/i7.jpg');
+}
+
+
+@media only screen and (max-width: 768px) {
+      body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+      }
+
+      nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .left h3 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .left h4 {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .left h6 {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .second-nav {
+        margin-left: 0;
+      }
+
+      .main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .l-side {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .l-p,
+      .about,
+      .test {
+        margin-left: 0;
+      }
+
+      .r-side {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .r-side form {
+        margin-left: 0;
+        font-size: 16px;
+      }
+
+      .test ul {
+        width: 100%;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .description,
+      .description h4,
+      .description p {
+        font-size: 14px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <marquee>Pathology Lab</marquee> -->
+    <header>
+     
+      <nav>
+        <div id="lg">
+          <img src="logo-removebg-preview.png" alt="kabir_parakh.com" >
+       </div>
+
+      
+       
+
+        <div class="left">
+           <h3>Sant Abhilash Charitable Medical 
+            Oraganisation and Pathology Lab</h3>
+                   <h4>Santh Kabir Marg, Pritam Nagar, Prayagraj, 211011</h4>
+                   <h6>(Under the trust of kabir Parakh, Prayagraj)</h6>
+        </div>
+
+        <div id="rg">
+          <img src="IMG_20240109_201604.jpg" alt="kabir_parakh.com" >
+       </div>
+        
+       
+      </nav>
+     
+    </header>
+    
+    <hr id="Home">
+    
+    <div class="main">
+      
+      <div class="l-side">
+        <div class="second-nav">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Tests">Tests</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="l-p">
+         
+          <h1>Welcome</h1>
+         
+          <p class="p">
+            There are two main branches of pathology: anatomical pathology and clinical pathology. Anatomical pathology involves the examination of tissues and organs obtained through biopsies, autopsies, or surgical procedures. This branch helps identify the structural and cellular changes associated with diseases. Clinical pathology, on the other hand, focuses on laboratory analysis of bodily fluids, such as blood and urine, to assess biochemical and hematological parameters, aiding in disease diagnosis and monitoring.Pathology is integral to medical research, as it helps uncover the underlying causes of diseases and contributes to the development of new diagnostic tools and treatment strategies. In summary, pathology is a vital field in medicine that encompasses the study, diagnosis, and understanding of diseases to improve patient care and advance medical knowledge.
+          </p>
+        </div>
+        <div class="l-p">
+          <h1>Qualities</h1>
+          <p class="p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            recusandae tempore totam dolores minima iste reiciendis, ducimus
+            consequatur dignissimos provident dolorum voluptas animi tempora.
+            Vel pariatur qui quisquam iusto minima totam earum praesentium,
+            libero illum quibusdam impedit deserunt expedita. Eveniet, nesciunt
+            consequuntur. Ullam quisquam impedit placeat provident possimus
+            dignissimos quis quia officia distinctio culpa dolorem error
+            voluptatum omnis molestiae exercitationem, voluptatibus adipisci et
+            incidunt expedita. Ipsam, quibusdam eligendi ab corporis, sunt
+            dignissimos quas explicabo vitae perspiciatis dicta velit odit
+            cumque aliquid iure? Neque quibusdam ipsum necessitatibus quas
+            doloribus harum quam blanditiis quis nulla dolore, perferendis culpa
+            eum iusto ut inventore cupiditate enim ex doloremque laudantium nam
+            voluptatum laboriosam quidem. Porro iste vitae consequuntur
+            distinctio molestias fuga facilis tempora mollitia vel?
+          </p>
+        </div>
+        <!-- <div class="l-p">
+            <h1>Feedback</h1>
+            <p class="p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+              recusandae tempore totam dolores minima iste reiciendis, ducimus
+              consequatur dignissimos provident dolorum voluptas animi tempora.
+              Vel pariatur qui quisquam iusto minima totam earum praesentium,
+              libero illum quibusdam impedit deserunt expedita. Eveniet, nesciunt
+              consequuntur. Ullam quisquam impedit placeat provident possimus
+              dignissimos quis quia officia distinctio culpa dolorem error
+              voluptatum omnis molestiae exercitationem, voluptatibus adipisci et
+        'OL?'      incidunt expedita. Ipsam, quibusdam eligendi ab corporis, sunt
+              dignissimos quas explicabo vitae perspiciatis dicta velit odit
+              cumque aliquid iure? Neque quibusdam ipsum necessitatibus quas
+              doloribus harum quam blanditiis quis nulla dolore, perferendis culpa
+              eum iusto ut inventore cupiditate enim ex doloremque laudantium nam
+              voluptatum laboriosam quidem. Porro iste vitae consequuntur
+              distinctio molestias fuga facilis tempora mollitia vel?
+            </p>
+          </div> -->
+      </div>
+      <div class="r-side">
+        <img src="img/i4.jpg" alt="daandata" class="img">
+        <button class="generate-report-btn" onclick="l_test()">Generate Report</button>
+      </div>
+      <!-- <%@ page import = "java.sql.*" %>
+      <%@ page import = "java.io.IOException" %>
+      <%@ page import = "java.io.IOException" %>
+      <%@ page import = "javax.servlet.ServletException" %>
+      <%@ page import = "javax.servlet.http.HttpServlet" %>
+      <%@ page import = "javax.servlet.http.HttpServletRequest" %>
+      <%@ page import = "javax.servlet.http.HttpServletResponse" %>
+      <%
+      String m1 = request.getParameter("user_id");
+      String m2 = request.getParameter("password");
+    
+      try {
+				Class.forName("oracle.jdbc.OracleDriver");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:", "SYSTEM", "ora9i");
+				String sql = "select type from login_up where ID='" + m1 + "' and PASSWORD='"
+						+ m2 + "'";
+				PreparedStatement ps = conn.prepareStatement(sql);
+				ResultSet rs = ps.executeQuery(sql);
+
+				if (rs.next()) {
+					String s = rs.getString(1);
+          out.println("value if s is "+s);
+					if (s.equals("admin")) {
+						String jspPage = "admin.jsp";
+            response.sendRedirect(request.getContextPath() + jspPage);
+					}
+					if (s.equals("emp")) {
+            String jspPage = "employee.jsp";
+            response.sendRedirect(request.getContextPath() + jspPage);
+					}
+				}
+			} catch (Exception e) {
+				out.println(e);
+			}
+      %> -->
+    </div>
+    <hr id="Tests">
+    <div class="test">
+      <h1>Tests</h1>
+      <ul>
+        <li>CBC</li>
+        <li>LFT</li>
+        <li>BST</li>
+        <li>KFT</li>
+        <li>Lipid Profile</li>
+        <li>Urine Test</li>
+        <li>SER</li>
+      </ul>
+    </div>
+    <hr id="AboutUs">
+    <div class="about">
+      <img src="img/i1.jpg" alt="about">
+    </div>
+    <hr id="Gallery">
+    <div class="wrapper">
+      <div class="container">
+          <!-- phlea card -->
+          <input type="radio" name="slide" class="slide" id="c1" checked>
+          <label for="c1" class="card">
+              <div class="row">
+                  <!-- <div class="icon">1</div> -->
+                  <!-- <div class="description">
+                      <h4>Winter</h4>
+                      <p>Winter has so much to offer -
+                       creative activities</p>
+                  </div> -->
+              </div>
+          </label>
+          <!-- dusra -->
+          <input type="radio" name="slide" class="slide" id="c2" checked>
+          <label for="c2" class="card">
+              <div class="row">
+                  <!-- <div class="icon">2</div> -->
+                  <!-- <div class="description">
+                      <h4>Winter</h4>
+                      <p>Winter has so much to offer -
+                       creative activities</p>
+                  </div> -->
+              </div>
+          </label>
+          <!-- threeeeeeeee -->
+          <input type="radio" name="slide" class="slide" id="c3" checked>
+          <label for="c3" class="card">
+              <div class="row">
+                  <!-- <div class="icon">1</div> -->
+                  <!-- <div class="description">
+                      <h4>Winter</h4>
+                      <p>Winter has so much to offer -
+                       creative activities</p>
+                  </div> -->
+              </div>
+          </label>
+          <!-- 44444444 -->
+          <input type="radio" name="slide" class="slide" id="c4" checked>
+          <label for="c4" class="card">
+              <div class="row">
+                  <!-- <div class="icon">1</div> -->
+                  <!-- <div class="description">
+                      <h4>Winter</h4>
+                      <p>Winter has so much to offer -
+                       creative activities</p>
+                  </div> -->
+              </div>
+          </label>
+          <!--  -->
+          <input type="radio" name="slide" class="slide" id="c5" checked>
+          <label for="c5" class="card">
+              <div class="row">
+                  <!-- <div class="icon">1</div> -->
+                  <!-- <div class="description">
+                      <h4>Winter</h4>
+                      <p>Winter has so much to offer -
+                       creative activities</p>
+                  </div> -->
+              </div>
+          </label>
+          <input type="radio" name="slide" class="slide" id="c6" checked>
+          <label for="c6" class="card">
+              <div class="row">
+                  <!-- <div class="icon">1</div> -->
+                  <!-- <div class="description">
+                      <h4>Winter</h4>
+                      <p>Winter has so much to offer -
+                       creative activities</p>
+                  </div> -->
+              </div>
+          </label>
+          <input type="radio" name="slide" class="slide" id="c7" checked>
+          <label for="c7" class="card">
+              <div class="row">
+                  <!-- <div class="icon">1</div> -->
+                  <!-- <div class="description">
+                      <h4>Winter</h4>
+                      <p>Winter has so much to offer -
+                       creative activities</p>
+                  </div> -->
+              </div>
+          </label>
+          <script>
+            function l_test(){
+              window.location.href="test_report.html";
+            }
+            history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+          </script>
+  </body>
+</html>

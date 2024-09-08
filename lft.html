@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media print {
+            button {
+                display: none;
+            }
+        }
+        table {
+    width: 100%;
+}
+
+.heading{
+    color: red;
+}
+
+.mid-head{
+    color: rgb(77, 176, 215);
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #fff;
+}
+
+.main-2 input {
+    /* border: none; */
+    /* outline: none; */
+    background-color: transparent;
+    text-align: center;
+    width: 35%;
+}
+
+.l input{
+    outline: none;
+    border: none;
+}
+
+.r input{
+    outline: none;
+    border: none;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #245c27;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.l-side{
+    margin-left: -83px;
+}
+
+.r-side{
+    margin-top: 20px;
+    margin-right: -40px;
+}
+
+.box-1{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(66, 61, 61);
+}
+
+.l{
+    width: 65%;
+    padding: 4px;
+}
+
+.r{
+    width: 35%;
+    padding: 4px;
+}
+
+#i1{
+    margin-left: 15px;
+}
+
+#i3{
+    margin-left: 13px;
+}
+
+#i5{
+    margin-left: 5px;
+}
+
+#h5{
+    margin-top: -2px;
+}
+
+.box-2{
+    display: flex;
+}
+
+.box-2a{
+    border: 0.2vw solid #000;
+    width: 24.5vw;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    padding-top: 0;
+    margin-bottom: 5px;
+    margin-top: -4px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- <% String wbc = request.getParameter("wbc"); %>
+    <% String lymP = request.getParameter("lymP"); %>
+    <% String monP = request.getParameter("monP"); %>
+    <% String eosP = request.getParameter("eosP"); %>
+    <% String basP = request.getParameter("basP"); %>
+    <% String neuH = request.getParameter("neuH"); %>
+    <% String lymH = request.getParameter("lymH"); %>
+    <% String monH = request.getParameter("monH"); %>
+    <% String eosH = request.getParameter("eosH"); %>
+    <% String basH = request.getParameter("basH"); %>
+    <% String s_alyH = request.getParameter("s_alyH"); %>
+    <% String neuP = request.getParameter("neuP"); %>
+    <% String s_alyP = request.getParameter("s_alyP"); %>
+    <% String s_licH = request.getParameter("s_licH"); %>
+    <% String s_licP = request.getParameter("s_licP"); %>
+    <% String p_name = request.getParameter("p_name"); %>
+    <% String gender = request.getParameter("gender"); %>
+    <% String age = request.getParameter("age"); %>
+    <% String test = request.getParameter("test"); %>
+    <% String s_id = request.getParameter("sample_id"); %>
+    <% String d_name = request.getParameter("d_name"); %> -->
+    <div class="main">
+        <div class="l-side">
+            <h5>CMO Regd. No. 5413/10563</h5>
+        </div>
+        <div class="r-side">
+            Mob:- 8934821664
+        </div>
+    </div>
+    <center><h2 class="heading">संत अभिलाष चैरिटेबल चिकित्सा संस्थान एवं पैथोलॉजी लैब</h2></center>
+    <center><h3 class="mid-head">संत कबीर मार्ग, प्रीतम नगर, प्रयागराज, 211011</h3></center>
+    <center><h4 class="mid-head">(कबीर पारख संस्थान, प्रयागराज द्वारा संचालित)</h4></center>
+    <center><h3 class="heading"><u>DEPARTMENT OF PATHOLOGY</u></h3></center>
+    <div class="box-1">
+        <div class="l">
+            <label for="Name">NAME:-</label>
+            <input type="text"><br>
+            <label for="as">Age/Sex:-</label>
+            <input type="text"><br>
+            <label for="u-no">UID No.</label>
+            <input type="text"><br>
+            <label for="d_name">Ref by-</label>
+            <input type="text">
+            <!-- <input type="text" name="u-no" id="i3"> -->
+        </div>
+        <div class="r">
+            <label for="l-id">Lab. Id:-</label>
+            <input type="text" name="l-id" id="i4"><br>
+            <label for="d" >Adv. By</label>
+            <input type="text" name="d" id="i5">
+            <div id="m-side">
+                31/01/2024
+            </div>
+        </div>
+    </div>
+    <center><h3 id="h5"><u>BLOOD TEST REPORT</u></h3></center>
+    <center><div class="box-2">
+        <div class="box-2a">
+            <h4>TEST NAME</h4>
+        </div>
+        <div class="box-2a">
+            <h4>OBSERVED VALUES</h4>
+        </div>
+        <div class="box-2a">
+            <h4>UNITS</h4>
+        </div>
+        <div class="box-2a">
+            <h4>BIO.REF.INTERVAL</h4>
+        </div>
+    </div></center>
+    <label><u>LFT</u></label>
+    <table class="main-2" border="2">
+        <tr>
+            <th id="a3"><b><u>PARAMETER</u></b></c>
+            </th>
+            <th id="a3"><b><u>RESULT</u></b></th>
+            <th id="a3"><b><u>REF.RANGE</u></b></th>
+            <th id="a3"><b><u>UNIT</u></b></th>
+        </tr>
+        <tr>
+            <th>T. Billirubin</th>
+            <td><input type="text" name ="n1"></td>
+            <td name="n2">mg/dl</td>
+            <td name="n3">0.3-1.5</td>
+        </tr>
+        <tr>
+            <th>Direct</th>
+            <td><input type="text" name="n4"> </td>
+            <td name="n5">mg/dl</td>
+            <td name="n6">0.1-0.3</td>
+        </tr>
+        <tr>
+            <th>SGPT(ALT)</th>
+            <td><input type="text" name ="n7"> </td>
+            <td name="n8">IU/I</td>
+            <td name="n9">0-40</td>
+        </tr>
+        <tr>
+            <th>SGOT(AST)</th>
+            <td><input type="text" name="n10"> </td>
+            <td name="n11">IU/I</td>
+            <td name="n12">0-40</td>
+        </tr>
+        <tr>
+            <th>Alkaline phosphate(ALP)</th>
+            <td><input type="text" name="n13"> </td>
+            <td name="n14">IU/I</td>
+            <td name="n15">60-170</td>
+        </tr>
+        <tr>
+            <th>Serum protein</th>
+            <td><input type="text" name="n16"> </td>
+            <td name="n17">g/dl</td>
+            <td name="n18">6.6-8.7</td>
+        </tr>
+        <tr>
+            <th>Albumin(ALB)</th>
+            <td><input type="text" name="n19"> </td>
+            <td name="n20">g/dl</td>
+            <td name="n21">3.9-4.9</td>
+        </tr>
+        </var>
+    </table>
+    <center><button onclick="printPage()">Print</button></center>
+    <script>
+        document.getElementsByName("n1").innerHTML = "<%= wbc %>";
+        document.getElementsByName("n4").innerHTML = "<%= neuP %>";
+        document.getElementsByName("n7").innerHTML = "<%= lymP %>";
+        document.getElementsByName("n10").innerHTML = "<%= monP %>";
+        document.getElementsByName("n13").innerHTML = "<%= eosP %>";
+        document.getElementsByName("n16").innerHTML = "<%= basP %>";
+        document.getElementsByName("n19").innerHTML = "<%= neuH %>";
+        document.getElementsByName("n22").innerHTML = "<%= lymH %>";
+        document.getElementsByName("n25").innerHTML = "<%= monH %>";
+        document.getElementsByName("n28").innerHTML = "<%= eosH %>";
+        document.getElementsByName("n31").innerHTML = "<%= basH %>";
+        document.getElementsByName("n34").innerHTML = "<%= s_alyH %>";
+        document.getElementsByName("n37").innerHTML = "<%= s_alyP %>";
+        document.getElementsByName("n40").innerHTML = "<%= s_licH %>";
+        document.getElementsByName("n43").innerHTML = "<%= s_licP %>";
+
+        var date=new Date();  
+        var day=date.getDate();  
+        var month=date.getMonth()+1;  
+        var year=date.getFullYear();  
+        document.getElementById('m-side').innerHTML=("<br>Date: "+day+"/"+month+"/"+year);
+
+        function printPage() {
+            window.print();
+        }
+
+    </script>
+</body>
+</html>

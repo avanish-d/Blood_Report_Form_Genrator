@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media print {
+            button {
+                display: none;
+            }
+        
+            input-container {
+        display: none;
+      }
+        
+        }
+        table {
+    width: 100%;
+}
+
+.heading{
+    color: red;
+}
+
+.mid-head{
+    color: rgb(77, 176, 215);
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #fff;
+}
+
+.main-2 input {
+    /* border: none; */
+    /* outline: none; */
+    background-color: transparent;
+    text-align: center;
+    width: 35%;
+}
+
+.l input{
+    outline: none;
+    border: none;
+}
+
+.r input{
+    outline: none;
+    border: none;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #245c27;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.l-side{
+    margin-left: -83px;
+}
+
+.r-side{
+    margin-top: 20px;
+    margin-right: -40px;
+}
+
+.box-1{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(66, 61, 61);
+}
+
+.l{
+    width: 35%;
+    padding: 4px;
+}
+
+.r{
+    width: 35%;
+    padding: 4px;
+}
+
+#i1{
+    margin-left: 15px;
+}
+
+#i3{
+    margin-left: 13px;
+}
+
+#i5{
+    margin-left: 5px;
+}
+
+#h5{
+    margin-top: -2px;
+}
+
+.box-2{
+    display: flex;
+}
+
+.box-2a{
+    border: 0.2vw solid #000;
+    width: 24.5vw;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    padding-top: 0;
+    margin-bottom: 5px;
+    margin-top: -4px;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+        function validateInput(input) {
+          input.value = input.value.replace(/[^0-9]/g, '');
+        }
+      </script>
+    <div class="main">
+        <div class="l-side">
+            <h5>CMO Regd. No. 5413/10563</h5>
+        </div>
+        <div class="r-side">
+            Mob:- 8934821664
+        </div>
+    </div>
+    <center><h2 class="heading">संत अभिलाष चैरिटेबल चिकित्सा संस्थान एवं पैथोलॉजी लैब</h2></center>
+    <center><h3 class="mid-head">संत कबीर मार्ग, प्रीतम नगर, प्रयागराज, 211011</h3></center>
+    <center><h4 class="mid-head">(कबीर पारख संस्थान, प्रयागराज द्वारा संचालित)</h4></center>
+    <center><h3 class="heading"><u>DEPARTMENT OF PATHOLOGY</u></h3></center>
+    <div class="box-1">
+        <div class="l">
+            <label for="Name">NAME:-</label>
+            <input type="text "><br>
+            <label >Age:-</label>
+            <input type="text" id="numericInput" pattern="[0-9]*" oninput="validateInput(this)">
+<br>
+            <label for="u-no">UID No. :-</label>
+            <input type="text" id="numericInput" pattern="[0-9]*" oninput="validateInput(this)"> <br>
+            <label for="d_name">Ref by- </label><input type="text"><br>
+
+        </div>
+        <div class="r">
+            <label for="l-id">Lab. Id:-</label>
+            <input type="text" name="l-id" id="i4"><br>
+            <label for="d" >Adv. By</label>
+            <input type="text" name="d" id="i5">
+            <div id="m-side">
+                31/01/2024
+            </div>
+        </div>
+    </div>
+    <center><h3 id="h5"><u>BLOOD TEST REPORT</u></h3></center>
+    <center><div class="box-2">
+        <div class="box-2a">
+            <h4>TEST NAME</h4>
+        </div>
+        <div class="box-2a">
+            <h4>OBSERVED VALUES</h4>
+        </div>
+        <div class="box-2a">
+            <h4>UNITS</h4>
+        </div>
+        <div class="box-2a">
+            <h4>BIO.REF.INTERVAL</h4>
+        </div>
+    </div></center>
+    <label><u>Blood Sugar Test</u></label>
+    <table border="2" class="main-2">
+        <tr>
+            <th id="a3"><b><u>PARAMETERS</u></b></c>
+            </th>
+            <th id="a3"><b><u>OBSERVED VALUES</u></b></th>
+            <th id="a3"><b><u>UNIT</u></b></th>
+            <th id="a3"><b><u>BIO.REF.INTERVAL</u></b></th>
+        </tr>
+        <tr>
+            <th>FASTING blood sugar(F.B.S)</th>
+            <td><input type="text" name ="n1"></td>
+            <td name="n2"></td>
+            <td name="n3">60-110</td>
+        </tr>
+        <tr>
+            <th>Post Prandia(P.P.B.S.)</th>
+            <td><input type="text" name="n4"> </td>
+            <td name="n5"></td>
+            <td name="n6">80-150</td>
+        </tr>
+        <tr>
+            <th>Random blood sugar(R.B.S.)</th>
+            <td><input type="text" name ="n7"> </td>
+            <td name="n8"></td>
+            <td name="n9">80-150</td>
+        </tr>
+        </var>
+    </table>
+    <center><button onclick="printPage()">Print</button></center>
+    <script>
+        var date=new Date();  
+        var day=date.getDate();  
+        var month=date.getMonth()+1;  
+        var year=date.getFullYear();  
+        document.getElementById('m-side').innerHTML=("<br>Date: "+day+"/"+month+"/"+year);
+
+        function printPage() {
+            window.print();
+        }
+
+    </script>
+</body>
+</html>
